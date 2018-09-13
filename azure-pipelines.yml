@@ -7,7 +7,7 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- task: Maven@part1
+- task: part1@1
   inputs:
     mavenPomFile: 'part1/pom.xml'
     mavenOptions: '-Xmx3072m'
