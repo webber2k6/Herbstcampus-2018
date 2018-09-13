@@ -8,6 +8,7 @@ pool:
 
 steps:
 - task: Maven@1
+  displayName: 'Build Part1'
   inputs:
     mavenPomFile: 'part1/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -18,6 +19,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part1 Lösung'
   inputs:
     mavenPomFile: 'part1_loesung/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -28,6 +30,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part2'
   inputs:
     mavenPomFile: 'part2/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -39,6 +42,7 @@ steps:
     goals: 'package'
 
 - task: Maven@1
+  displayName: 'Build Part3'
   inputs:
     mavenPomFile: 'part3/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -49,6 +53,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part3 Lösung'
   inputs:
     mavenPomFile: 'part3_loesung/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -59,6 +64,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part4'
   inputs:
     mavenPomFile: 'part4/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -69,6 +75,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part4 Lösung'
   inputs:
     mavenPomFile: 'part4_loesung/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -79,6 +86,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part6'
   inputs:
     mavenPomFile: 'part6/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -89,6 +97,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part6 Lösung'
   inputs:
     mavenPomFile: 'part6_loesung/pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -99,6 +108,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 - task: Maven@1
+  displayName: 'Build Part7'
   inputs:
     mavenPomFile: 'part7/pom.xml'
     mavenOptions: '-Xmx3072m'
