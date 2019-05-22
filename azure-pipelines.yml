@@ -7,6 +7,10 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
+- task: JavaToolInstaller@0
+  displayName: 'Install JDK'
+  inputs:
+    versionSpec: '10'
 - task: Maven@1
   displayName: 'Build Part1'
   inputs:
